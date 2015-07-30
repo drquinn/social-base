@@ -1,0 +1,25 @@
+<div class='sidebar'>
+
+	<h1>{{ vm.name }}</h1>
+  <div class='status'>
+    <div ng-hide='statusEditable'>
+      <a href='#' ng-click='statusEditable=!statusEditable'>
+        <div class='unclicked'>{{ vm.status }}</div>
+      </a>
+    </div>
+    <div ng-show='statusEditable'>
+      <strong><textarea ng-model='vm.status'></textarea></strong>
+      <br />
+      <span class='save'>
+        <a href='#' ng-click='statusEditable=!statusEditable'>
+          Save
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <h2>Friends</h2>
+  <div ng-repeat='friend in vm.friends'>
+    - {{ friend }} <a ng-href='#/'><i class='fa fa-pencil'></i></a>
+  </div>
+</div>
