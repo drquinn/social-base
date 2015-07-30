@@ -32933,7 +32933,7 @@
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--if you'd like to have the navbar and or header on every page, move it up a level to app.html!-->\n<navbar></navbar>\n<!--<header>-->\n\t<!--<hero></hero>-->\n<!--</header>-->\n<div class='container'>\n  <sidebar></sidebar>\n  <main class='main-zone'>\n    <div>\n      <h2>Updates</h2>\n    </div>\n    <statuslist></statuslist>\n  </main>\n</div>\n"
+	module.exports = "<!--if you'd like to have the navbar and or header on every page, move it up a level to app.html!-->\n<navbar></navbar>\n<!--<header>-->\n\t<!--<hero></hero>-->\n<!--</header>-->\n<div class='container'>\n  <sidebar></sidebar>\n  <main class='main-zone'>\n    <statuslist></statuslist>\n  </main>\n</div>\n"
 
 /***/ },
 /* 8 */
@@ -33466,7 +33466,7 @@
 /* 21 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div ng-repeat='post in vm.statusMessages'>\n    <div class='post'>\n      <div class='friend'>\n        {{ post.friend }}\n      </div>\n      <div class='message'>\n        {{ post.message }}\n      </div>\n    </div>\n  </div>\n</div>\n"
+	module.exports = "<div class='statuslist'>\n  <div ng-repeat='post in vm.statusMessages'>\n    <div class='post'>\n      <div class='friend'>\n        {{ post.friend }}\n      </div>\n      <div class='message'>\n        {{ post.message }}\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
 /* 22 */
@@ -33533,7 +33533,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(11)();
-	exports.push([module.id, ".post {\n  padding: 25px;\n}\n.friend {\n  font-weight: bold;\n}\n", ""]);
+	exports.push([module.id, ".statuslist {\n  padding: 30px;\n}\n.post {\n  padding: 25px;\n}\n.friend {\n  font-weight: bold;\n}\n", ""]);
 
 /***/ },
 /* 25 */
